@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+/* body{
+    font-family: 'Montserrat', sans-serif !important;
+} */
+
+:root{
+    --text-color-black: #000;
+    --white-100: #fff !important ; 
+    --primary-100: #0468ff;
+}
+
+
+.main-txt-col{
+    color: var(--text-color-black) !important;
+}
