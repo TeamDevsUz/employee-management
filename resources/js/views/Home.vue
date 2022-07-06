@@ -4,13 +4,18 @@
             <div class="header_banner-box-item">
                 
             </div>
+            <UsefulLinks></UsefulLinks>
         </div>
     </div>
 </template>
 
 <script>
+import UsefulLinks from "../components/UsefulLinksComponent.vue";
 export default {
-
+    name: "home",
+    components: {
+        UsefulLinks
+    }
 }
 </script>
 

@@ -23,7 +23,7 @@ Route::get('/{any}', function () {
 // Route::get('/about', function () {
 //     return view('example');
 // });
-Route::get('add-employee', [UserRegistController::class, 'user_registration']);
+
 
 // Route::get('add/new/post', [AddNewPostController::class, 'index'])->name('sitaAdd');
 

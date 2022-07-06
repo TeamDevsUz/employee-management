@@ -122,16 +122,11 @@
             },
             
             saveForm(){
-                axios.post('user_registration', {
-                    form: {
-                        first_name : this.first_name,
-                        last_name : this.last_name,
-                        email : this.email,
-                        phone : this.phone,
-                        password : this.password
-                    }
+                axios.post('/api/register', this.form).then(() =>{
+                    console.log('saved');
+                }).catch((error) =>{
+                    this.errors = error.response.data.errors;
                 })
-                .then(response => console.log(response))
             }
         }
     } 
