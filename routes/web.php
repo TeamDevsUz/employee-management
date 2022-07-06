@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Blade\AddNewPostController;
+use App\Http\Controllers\Blade\UserRegistController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeesController;
 
@@ -22,7 +23,7 @@ Route::get('/{any}', function () {
 // Route::get('/about', function () {
 //     return view('example');
 // });
-
+Route::get('add-employee', [UserRegistController::class, 'user_registration']);
 
 // Route::get('add/new/post', [AddNewPostController::class, 'index'])->name('sitaAdd');
 

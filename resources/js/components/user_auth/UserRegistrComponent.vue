@@ -114,30 +114,24 @@
         },
         methods:{
             goBack(){
-                window.location.href = '/employees';
+                window.location.href = '/';
             },
             
             toggleShow() {
                 this.showPassword = !this.showPassword;
             },
             
-            saveForm(formName){
-                this.$refs[formName].validate((valid) => {
-                    if (valid) {
-                        if(this.scope == 'create')
-                        {
-                            this.$store.dispatch('saveEmployee', this.form);
-                        }
-                        else
-                        {
-                            this.$store.dispatch('updateEmployee', 
-                            {
-                                id: this.id,
-                                form: this.form,
-                            });
-                        } 
-                    } 
+            saveForm(){
+                axios.post('user_registration', {
+                    form: {
+                        first_name : this.first_name,
+                        last_name : this.last_name,
+                        email : this.email,
+                        phone : this.phone,
+                        password : this.password
+                    }
                 })
+                .then(response => console.log(response))
             }
         }
     } 

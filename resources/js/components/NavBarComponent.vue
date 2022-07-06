@@ -51,6 +51,49 @@
                 <ul v-show="!mobile" class="navigation">
                     <li>
                         <router-link class="link" :to="{ name: 'home'}">Аренда</router-link>
+                        <div class="sub-menu">
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                            <h4>Квартира</h4>
+                            <ul>
+                                <li><a href="#">1 комнатные</a></li>
+                                <li><a href="#">2 комнатные</a></li>
+                                <li><a href="#">3 комнатные</a></li>
+                                <li><a href="#">5 комнатные</a></li>
+                                <li><a href="#">Более 5 комнат</a></li>
+                            </ul>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                            <h4>other categories</h4>
+                            <ul>
+                                <li><a href="#">iphones</a></li>
+                                <li><a href="#">speakers</a></li>
+                                <li><a href="#">samsung devices</a></li>
+                                <li><a href="#">audio &amp; headphones</a></li>
+                                <li><a href="#">vehicles electronics &amp; GPS</a></li>
+                            </ul>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                            <h4>other categories</h4>
+                            <ul>
+                                <li><a href="#">iphones</a></li>
+                                <li><a href="#">speakers</a></li>
+                                <li><a href="#">samsung devices</a></li>
+                                <li><a href="#">audio &amp; headphones</a></li>
+                                <li><a href="#">vehicles electronics &amp; GPS</a></li>
+                            </ul>
+                            </div>
+                            <!-- end of item -->
+                            <!-- item -->
+                            <div class="sub-menu-item">
+                            <img src="images/car.png" alt="product image">
+                            </div>
+                            <!-- end of item -->
+                        </div>
                     </li>
                     <li>
                         <router-link class="link" :to="{ name: 'about'}">Продажа</router-link>
@@ -301,7 +344,7 @@ export default {
             position: relative;
             display: flex;
             flex-direction: row;
-            padding: 12px 0;
+            padding: 0;
             transition: .5s ease all;
             width: 100%;
             margin: 0 auto;
@@ -319,9 +362,13 @@ export default {
                 list-style: none;
                 text-decoration: none;
             }
+            .sub-menu li[data-v-1614d4d2] {
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
             
             li{
-                padding: 16px;
+                padding: 25px 16px;
                 margin-left: 16px;
             }
             
@@ -334,6 +381,7 @@ export default {
                 &:hover{
                     color: #00afea;
                     border-color: #00afea;
+                    cursor: pointer;
                 }
             }
             
@@ -406,6 +454,7 @@ export default {
                 transform: translateX(0);
             }
         }
+
     }
 }
     
