@@ -20,3 +20,18 @@
 .main-txt-col{
     color: var(--text-color-black) !important;
 }
+
+.zs0iC {
+    padding-top: 3.2rem;
+}
+.zs0iC_bottom{
+    padding: 3.2rem 0;
+}
+
+.box-card .el-form-item .el-form-item__label {
+    float: unset !important;
+}
+
+.password_div .el-input__inner{
+    border-radius: 4px 0 0 4px !important;
+}

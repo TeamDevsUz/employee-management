@@ -143,9 +143,7 @@
 
 
 <style>
-.zs0iC {
-    padding-top: 3.2rem;
-}
+
 .form_mainBox-smallBox{
     margin-bottom: 2rem;
     width: auto;

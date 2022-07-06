@@ -1,6 +1,7 @@
 import Home from './views/Home.vue';
 import About from './views/About.vue';
 import NewPost from './views/NewPost.vue';
+import userRegist from './components/user_auth/UserRegistrComponent.vue';
 export default{
     mode: 'history',
     
@@ -19,6 +20,11 @@ export default{
             path: '/offers/new',
             name: 'newOffer',
             component: NewPost
+        },
+        {
+            path: '/user/registration',
+            name: 'userRegist',
+            component: userRegist
         },
     ]
 }

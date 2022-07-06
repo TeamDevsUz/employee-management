@@ -13,12 +13,16 @@ import routes from './routes';
 import lang from 'element-ui/lib/locale/lang/en'
 import locale from 'element-ui/lib/locale'
 
+
+// Input mask
+import VueMask from 'v-mask'
 // configure language
 locale.use(lang)
 
 window.Vue = require('vue').default;
 Vue.use(ElementUI);
 Vue.use(VueRouter);
+Vue.use(VueMask);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('nav-bar', require('./components/NavBarComponent.vue').default);

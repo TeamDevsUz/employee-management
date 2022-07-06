@@ -24,9 +24,10 @@
                     </a>
                 </div>
                 <div class="header-menu-top-box-item header__authorization d-flex align-items-center">
-                    <a class="authorization-link main-txt-col" href="#!" title="Войти" rel="nofollow">Войти</a>
+                    <!-- <a class="authorization-link main-txt-col" href="#!" title="Войти" rel="nofollow">Войти</a> -->
+                    <router-link class="authorization-link main-txt-col" :to="{ name: 'userRegist'}">Войти</router-link>
                     <span>/</span>
-                    <a class="authorization-link main-txt-col" href="#!" title="Регистрация" rel="nofollow">Регистрация</a>
+                    <router-link class="authorization-link main-txt-col" :to="{ name: 'userRegist'}">Регистрация</router-link>
                 </div>
                 <div class="header-menu-top-box-item">
                      <el-tooltip class="item" effect="dark" content="Избранное" placement="bottom">
